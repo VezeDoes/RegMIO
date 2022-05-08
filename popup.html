@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegMIO</title>
+    <link rel="stylesheet" href="./popup.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <h1>RegMIO</h1>
+        <p>Register Many In One</p>
+    </div>
+    <div class="form-section">
+        <form id="regmio-form">
+            <div class="regmio-input">
+                <label for="regmio-first-name" class="label-input">First Name</label>
+                <input type="text" name="first-name" id="regmio-first-name">
+            </div>
+            <div class="regmio-input">
+                <label for="regmio-last-name" class="label-input">Last Name</label>
+                <input type="text" name="last-name" id="regmio-last-name">
+            </div>
+            <div class="regmio-input">
+                <label for="regmio-username" class="label-input">Username</label>
+                <input type="text" name="username" id="regmio-username">
+            </div>
+            <div class="regmio-input">
+                <label for="regmio-email" class="label-input">Email</label>
+                <input type="email" name="email" id="regmio-email">
+            </div>
+            <div class="regmio-input">
+                <label for="regmio-password" class="label-input">Password</label>
+                <input type="password" name="password" id="regmio-password">
+            </div>
+            <div class="regmio-input" id="show-password">
+                <input type="checkbox" id="regmio-show-password">
+                <label for="regmio-show-password" id="regmio-show-password-label">Show Password</label>
+            </div>
+            <div class="regmio-input">
+                <label for="birthday" class="label-input">Birthday</label>
+                <input type="date" name="birthday" id="regmio-birthday">
+            </div>
+            <div class="regmio-input">
+                <button id="regmio-set-button" type="submit">Set</button>
+            </div>
+        </form>
+        <div class="donate">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="FMCZVSCM3928E"/>
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" class="paypal"/>
+                <img alt="" border="0" src="https://www.paypal.com/en_LV/i/scr/pixel.gif" width="1" height="1"/>
+            </form>
+        </div>
+    </div>
+    <div class="link-section">
+        <div id="link-info">
+            <p>After you've set your information, click on any icon you want to register for!</p>
+        </div>
+        <div class="links">
+            <div class="link">
+                <a href="https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank">
+                    <img src="./icons/google.png" class="icon-img">
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.facebook.com/reg/" target="_blank">
+                    <img src="./icons/facebook.png" class="icon-img">
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.amazon.com/ap/register?openid.return_to=https%3A%2F%2Ftrack.amazon.com%2F&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_shippingrecipientcentral_us&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank">
+                    <img src="./icons/amazon.png" class="icon-img">
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.reddit.com/reddits/login/" target="_blank">
+                    <img src="./icons/reddit.png" class="icon-img">
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.linkedin.com/signup/cold-join?trk=guest_homepage-basic_nav-header-join" target="_blank">
+                    <img src="./icons/linkedin.png" class="icon-img">
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Register" target="_blank">
+                    <img src="./icons/wikipedia.png" class="icon-img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
